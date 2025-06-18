@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ flex-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,17 @@
     <title>معرض أعمالي | مطور ويب مبدع</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&family=Be+Vietnam+Pro:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'BeIN';
+            src: url('https://fonts.bein.com/BeINNormal.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
         body {
-            font-family: 'Tajawal', sans-serif;
+            font-family: 'BeIN', 'Tajawal', sans-serif;
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: #e2e8f0;
             overflow-x: hidden;
@@ -87,6 +94,24 @@
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
+        
+        /* تحسينات للخط BeIN */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .text-xl, .text-2xl, .text-3xl, .text-4xl, .text-5xl, .text-6xl {
+            line-height: 1.2;
+        }
+        
+        .font-bold {
+            font-weight: 700;
+        }
+        
+        .font-medium {
+            font-weight: 500;
+        }
     </style>
 </head>
 <body class="min-h-screen">
@@ -95,7 +120,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex-shrink-0">
-                    <span class="text-2xl font-bold gradient-text">Profile</span>
+                    <span class="text-2xl font-bold gradient-text">My Profile</span>
                 </div>
                 <div class="hidden md:block">
                     <div class="mr-10 flex items-center space-x-8">
@@ -134,7 +159,7 @@
             <div class="flex flex-col md:flex-row-reverse items-center justify-between">
                 <div class="md:w-1/2 mb-12 md:mb-0">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">مرحباً، أنا <span class="gradient-text">محمد</span></h1>
-                    <h2 class="text-2xl md:text-3xl text-slate-300 mb-6">مطور واجهات أمامية & مصمم واجهات</h2>
+                    <h2 class="text-2xl md:text-3xl text-slate-300 mb-6">مطور واجهات أمامية & مبرمج تطبيقات</h2>
                     <p class="text-slate-400 mb-8 max-w-lg">أقوم بإنشاء مواقع وتطبيقات جميلة وعملية مع التركيز على تجربة المستخدم ومبادئ التصميم الحديثة.</p>
                     <div class="flex space-x-4">
                         <a href="#projects" class="px-6 py-3 bg-gradient-to-r from-blue-500 to-teal-500 text-white font-medium rounded-full hover:shadow-lg transition-all duration-300 transform hover:scale-105">
@@ -149,7 +174,7 @@
                     <div class="relative floating h-64 sm:w-80 sm:h-80">
                         <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 blur-xl opacity-30"></div>
                         <div class="bg-animation overflow-hidden p-[6px] rounded-full">
-                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB"
+                            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80"
                                     alt="profile"
                                     class="relative z-10 w-60 h-60 rounded-full object-cover objec-top">
                         </div>
@@ -193,9 +218,9 @@
                           </a>
                       </div>
                     </div>
-                                    
+                                                    
                 </div>
-                                
+                                            
                 <!-- Project 2 -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-2 card-hover">
                     <div class="relative overflow-hidden rounded-lg mb-6 h-48">
@@ -222,7 +247,7 @@
                       </div>
                     </div>
                 </div>
-                                
+                                            
                 <!-- Project 3 -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-2 card-hover">
                     <div class="relative overflow-hidden rounded-lg mb-6 h-48">
@@ -314,7 +339,7 @@
                     </div>
                     <h3 class="font-medium">HTML5</h3>
                 </div>
-                                
+                                            
                 <!-- CSS3 -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center card-hover">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center">
@@ -322,7 +347,7 @@
                     </div>
                     <h3 class="font-medium">CSS3</h3>
                 </div>
-                                
+                                            
                 <!-- JavaScript -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center card-hover">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center">
@@ -330,7 +355,7 @@
                     </div>
                     <h3 class="font-medium">JavaScript</h3>
                 </div>
-                                
+                                            
                 <!-- React -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center card-hover">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center">
@@ -338,7 +363,7 @@
                     </div>
                     <h3 class="font-medium">React</h3>
                 </div>
-                                
+                                            
                 <!-- Vue -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center card-hover">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center">
@@ -346,7 +371,7 @@
                     </div>
                     <h3 class="font-medium">Vue.js</h3>
                 </div>
-                                
+                                            
                 <!-- Node.js -->
                 <div class="bg-slate-800/50 border border-slate-700 rounded-xl p-6 flex flex-col items-center card-hover">
                     <div class="w-16 h-16 mb-4 flex items-center justify-center">
@@ -415,7 +440,7 @@
                         </button>
                     </form>
                 </div>
-                                
+                                            
                 <div class="md:w-1/2">
                     <div class="bg-slate-800 rounded-xl p-8 h-full">
                         <h3 class="text-xl font-bold mb-6">معلومات التواصل</h3>
@@ -429,7 +454,7 @@
                                     <a href="mailto:contact@example.com" class="text-slate-400 hover:text-blue-400 transition-colors">contact@example.com</a>
                                 </div>
                             </div>
-                                                        
+                                                                
                             <div class="flex items-start">
                                 <div class="flex-shrink-0 bg-slate-700/50 p-3 rounded-lg">
                                     <i class="fas fa-map-marker-alt text-blue-400 text-xl"></i>
@@ -440,7 +465,7 @@
                                 </div>
                             </div>
                         </div>
-                                                
+                                                                
                         <div class="mt-10">
                             <h4 class="font-medium text-slate-300 mb-4">تابعني</h4>
                             <div class="flex space-x-4">
@@ -491,7 +516,7 @@
                         </a>
                     </div>
                 </div>
-                                
+                                            
                 <div>
                     <h3 class="text-white text-lg font-semibold mb-4">روابط سريعة</h3>
                     <ul class="space-y-2">
@@ -502,7 +527,7 @@
                         <li><a href="#contact" class="hover:text-white transition">اتصل بي</a></li>
                     </ul>
                 </div>
-                                
+                                            
                 <div>
                     <h3 class="text-white text-lg font-semibold mb-4">معلومات التواصل</h3>
                     <ul class="space-y-2">
@@ -532,7 +557,7 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- Back to Top Button -->
     <button id="back-to-top" class="fixed z-1765 bottom-8 left-8 w-12 h-12 bg-gradient-to-r from-blue-500 to-teal-500 text-white rounded-full shadow-lg opacity-0 invisible transition-all duration-300 flex items-center justify-center">
         <i class="fas fa-arrow-up"></i>
@@ -549,10 +574,10 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
-                                
+                                            
                 // Close mobile menu if open
                 document.getElementById('mobile-menu').classList.add('hidden');
-                                
+                                            
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     window.scrollTo({
@@ -583,7 +608,7 @@
 
         // Back to top button
         const backToTopButton = document.getElementById('back-to-top');
-                
+                        
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 300) {
                 backToTopButton.classList.remove('opacity-0', 'invisible');
@@ -593,7 +618,7 @@
                 backToTopButton.classList.remove('opacity-100', 'visible');
             }
         });
-                
+                        
         backToTopButton.addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
@@ -604,19 +629,19 @@
         // Highlight active section in navigation
         const sections = document.querySelectorAll('section');
         const navLinks = document.querySelectorAll('.nav-link');
-                
+                        
         window.addEventListener('scroll', function() {
             let current = '';
-                        
+                                    
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
                 const sectionHeight = section.offsetHeight;
-                                
+                                            
                 if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
                     current = section.getAttribute('id');
                 }
             });
-                        
+                                    
             navLinks.forEach(link => {
                 link.classList.remove('active-link');
                 if (link.getAttribute('href') === `#${current}`) {
@@ -626,4 +651,4 @@
         });
     </script>
 </body>
-</html>
+</html> items-
